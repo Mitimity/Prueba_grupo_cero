@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Inicio de sesion</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -61,8 +61,9 @@
   <!--Contenido-->
   <main>
     <div class="container">
-      <!--titulo-->
       <div class="col-lg-8 mx-auto p-3 py-md-5">
+
+        <!--Diseño de titulo-->
         <div class="d-flex align-items-center pb-3 mb-5 border-bottom">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
@@ -76,31 +77,43 @@
           </a>
         </div>
 
-        <form>
+        <!--Formulario de inicio de sesion-->
+        <form action="" method="post" onsubmit="">
+
+          <!--Ingresar correo electronico-->
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="txtCorreo" class="form-label">Correo electronico</label>
+            <input type="email" class="form-control" id="txtCorreo" required minlength="5">
             <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
           </div>
+
+          <!--Ingresar contraseña-->
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-            <div id="emailHelp" class="form-text">¿No tienes cuenta? registrate <a href="crear_usuario.html">aqui.</a></div>
+            <label for="txtClave" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="txtClave" required minlength="5" maxlength="10">
+            <div id="emailHelp" class="form-text">¿No tienes cuenta? puedes registrarte <a href="crear_usuario.html">aqui.</a></div>
           </div>
+
+          <!--Recordar usuario-->
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Recordar usuario</label>
           </div>
+
+          <!--Boton continuar-->
           <button type="submit" class="btn btn-primary">Continuar</button>
         </form>
+
       </div>
     </div>
-
   </main>
-  <!---->
+
+  <!--Pie de pagina-->
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2021 Programacion Web~002</p>
   </footer>
+
+  <!--Scripts-->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
