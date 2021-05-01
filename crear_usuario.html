@@ -95,12 +95,12 @@
         </div>
 
         <!--Formulario crear usuario-->
-        <form action="index.html" method="POST" onsubmit="return validarForm()">
+        <form action="index.html" method="POST" onsubmit="validarFormInsc()">
 
           <!--Ingreso de nombre-->
           <div class="mb-3">
             <label for="txtNombre" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="txtNombre" required minlength="8">
+            <input type="text" class="form-control" id="txtNombre" required minlength="5">
           </div>
 
           <!--Ingreso de correo-->
@@ -142,6 +142,7 @@
   </footer>
 
   <!--Scripts-->
+  <script src="js/scripts.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
