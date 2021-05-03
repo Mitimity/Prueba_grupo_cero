@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principal</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<!--Tamaño imagen-->
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img {
+      height: 500px;
+    }
+  }
+</style>
+
+<body>
+  <!--Barra de navegacion-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- logo -->
+        <img class="navbar-brand" src="img/t25444.png" width="auto" height="50" alt="">
+
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <!--Inicio-->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                </svg>&nbsp;Inicio</a>
+            </li>
+
+            <!--Ingresar obra-->
+            <li class="nav-item">
+              <a class="nav-link" href="ingresar_obra.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-palette" viewBox="0 0 16 16">
+                  <path
+                    d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                  <path
+                    d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z" />
+                </svg>&nbsp;Ingresar obra</a>
+            </li>
+
+            <!--Contacto-->
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                </svg>&nbsp;Contáctenos</a>
+
+              <!--Mi cuenta-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>&nbsp;Mi cuenta</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="inicio_sesion.html">Iniciar sesión</a></li>
+                <li><a class="dropdown-item" href="crear_usuario.html">Crear cuenta</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--Detalle 1-->
+    <div class="album py-5 bg-light">
+      <!--Valor del dolar-->
+      <div class="col-lg-5 mx-auto p-3 py-md-3">
+        <div class="d-flex align-items-center pb-3 mb-5 border-bottom">
+          <section id="consumo">
+            <h1 class="display-6">Consulte aquí el valor del dolar</h1>
+
+            <input class="btn btn-secondary" type="button" value="Valor Dolar" onclick="recuperaDolar()">
+            <div id="valor_dolar"></div>
+            <script>
+              function recuperaDolar() {
+                fetch("https://mindicador.cl/api/dolar")
+                  .then(function (response) {
+                    // status 200 "Ok"
+                    if (response.status != 200) {
+                      alert("No pudo conectar con el servidor");
+                      return;
+                    }
+                    response.json().then(function (data) {
+                      console.log(data);
+                      var dolar = data.serie[0].valor;
+                      document.getElementById('valor_dolar').innerHTML = dolar;
+                    })
+                  })
+              }
+            </script>
+          </section>
+        </div>
+      </div>
+
+      <!--Contenido-->
+      <div class="col-lg-5 mx-auto p-3 py-md-3">
+
+        <h1 class="display-3">Detalle obra</h1>
+        <br>
+        <!--Volver a inicio-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Descripcion</li>
+          </ol>
+        </nav>
+        <br>
+        <!--Contenido de detalle 1-->
+        <!--Imagen obra-->
+        <img src="img/exp1.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="">
+
+        <!--Descripcion de obra-->
+        <p><b>Autor:</b> Leonardo da Vinci</p>
+
+        <p><b>Nombre</b>: La Mona Lisa</p>
+
+        <p><b>Técnica</b>: Óleo / Técnica del sfumato</p>
+
+        <p><b>Descripción</b>: Retrato de medio cuerpo, o de tres cuartos, sobre un paisaje que se divide en dos
+          atmósferas,
+          una más fría (la superior) y otra más cálida con colores terrosos (la inferior).</p>
+
+        <p><b>Historia</b>: La Gioconda se hizo popular para el público en general por la amplia difusión de su robo,
+          en 1911. La prensa cubrió el hecho: se preguntaba quién podría haber robado la Gioconda, por qué y, sobre
+          todo,
+          ¡cómo! El cuadro se recuperó; el culpable era un italiano muy chauvinista llamado Vincenzo Peruggia. Su acto
+          se basó en su deseo de restituir la obra a su país natal
+        </p>
+
+        <p><b>Precio</b>: 2.393,00 USD</p>
+      </div>
+    </div>
+
+    <!--Detalle 2-->
+    <div class="album py-5 bg-light">
+      <div class="col-lg-5 mx-auto p-3 py-md-3">
+
+        <h1 class="display-3">Detalle obra</h1>
+        <br>
+        <!--Volver a inicio-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Descripcion</li>
+          </ol>
+        </nav>
+        <br>
+        <!--Contenido de detalle 2-->
+        <div class="clearfix">
+          <img src="img/exp2.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="">
+
+          <p>
+            <b>Autor:</b> Pierre-Auguste Renoir
+          </p>
+
+          <p>
+            <b>Nombre</b>: Baile en el Moulin de la Galette
+          </p>
+
+          <p>
+            <b>Técnica</b>: Óleo / Aceite
+          </p>
+          <p>
+            <b>Descripción</b>: Esta pintura más pequeña (76cm por 1.11cm) presenta pinceladas sueltas que permiten a
+            los espectadores identificar más fácilmente los diferentes tonos que componen el negro. Aunque no está claro
+            cuál pieza es el original y cuál es la copia, las pinturas son idénticas en cuanto a su iconografía, desde
+            la puesta de sol hasta las personas individuales.
+          </p>
+          <p>
+            <b>Historia</b>: En 1861, Monet fue enviado a Algeria para hacer su servicio militar. Durante sus siete años
+            en el norte de África, el artista desarrolló un gusto particular por la luz y el color. Al regresar a
+            Francia, siguió incorporando colores brillantes a sus pinturas, que aplicaba con pinceladas rápidas y
+            expresivas sobre el lienzo para capturar “impresiones” de sus alrededores.
+
+            Rechazando completamente los gustos tradicionales de la prestigiosa Academia de Bellas Artes de París, la
+            aproximación de Monet a la pintura transformó el arte del siglo XIX, siendo Impresión, sol naciente un punto
+            de inflexión.
+          </p>
+          <p>
+            <b>Precio</b>: 2.151,00 USD
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Detalle 3-->
+    <div class="album py-5 bg-light">
+      <div class="col-lg-5 mx-auto p-3 py-md-3">
+
+        <h1 class="display-3">Detalle obra</h1>
+        <br>
+        <!--Volver a inicio-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Descripcion</li>
+          </ol>
+        </nav>
+        <br>
+        <!--Contenido de detalle 3-->
+        <img src="img/exp3.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="">
+
+        <p>
+          <b>Autor:</b> Claude Monet
+        </p>
+
+        <p>
+          <b>Nombre</b>: Impresión, sol naciente
+        </p>
+
+        <p>
+          <b>Técnica</b>: Óleo
+        </p>
+        <p>
+          <b>Descripción</b>: Impresión, sol naciente es un cuadro del pintor francés Claude Monet, que dio su nombre
+          al movimiento impresionista. Se conserva en el Museo Marmottan Monet de París. Pintado aproximadamente en el
+          año 1872, representa el puerto de Le Havre, ciudad en la que Monet pasó parte de la vida.
+        </p>
+        <p>
+          <b>Historia</b>: En 1861, Monet fue enviado a Algeria para hacer su servicio militar. Durante sus siete años
+          en el norte de África, el artista desarrolló un gusto particular por la luz y el color. Al regresar a
+          Francia, siguió incorporando colores brillantes a sus pinturas, que aplicaba con pinceladas rápidas y
+          expresivas sobre el lienzo para capturar “impresiones” de sus alrededores.
+
+          Rechazando completamente los gustos tradicionales de la prestigiosa Academia de Bellas Artes de París, la
+          aproximación de Monet a la pintura transformó el arte del siglo XIX, siendo Impresión, sol naciente un punto
+          de inflexión.
+        </p>
+        <p>
+          <b>Precio</b>: 2.016,00 USD
+        </p>
+      </div>
+    </div>
+
+    <!--Detalle 4-->
+    <div class="album py-5 bg-light">
+      <div class="col-lg-5 mx-auto p-3 py-md-3">
+
+        <h1 class="display-3">Detalle obra</h1>
+        <br>
+        <!--Volver a inicio-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Descripcion</li>
+          </ol>
+        </nav>
+        <br>
+        <!--Contenido de detalle 4-->
+        <div class="clearfix">
+          <img src="img/exp4.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="">
+
+          <p>
+            <b>Autor:</b> Johannes Vermeer
+          </p>
+
+          <p>
+            <b>Nombre</b>: La joven de la perla
+          </p>
+
+          <p>
+            <b>Técnica</b>: Pintura al aceite
+          </p>
+          <p>
+            <b>Descripción</b>:La joven de la perla, también conocida como Muchacha con turbante, es una de las obras
+            maestras del pintor neerlandés Johannes Vermeer realizada entre 1665 y 1667, y, como el nombre indica,
+            utiliza un pendiente de perla como punto focal. La pintura se encuentra actualmente en el museo Mauritshuis
+            de La Haya.
+          </p>
+          <p>
+            <b>Historia</b>:Esta obra es, sin duda, el cuadro más famoso de Jan Vermeer, pintor del siglo XVII. Es un
+            óleo sobre lienzo, que actualmente se encuentra en La Haya. En esta ciudad es dónde se mostró en público por
+            primera vez. Fue en 1881, en una subasta en la que se compró por sólo dos florines y treinta céntimos. El
+            comprador murió sin herederos, con lo que donó este cuadro (y otros muchos) al museo Mauritshuis.
+
+            De la joven, se desconoce su identidad real, se cree que podría ser una modelo o quizás se hizo por encargo.
+            Lo que está claro es que su postura enigmática ha dado lugar a muchas teorías. Tras la mayor y más reciente
+            restauración del cuadro en 1994, la sutil combinación del color y la íntima mirada fija de la chica hacia el
+            espectador se han realzado mucho. Tal realce se debe a un contraste entre un fondo muy oscuro y lo que se
+            puede ver del cuerpo vestido de la muchacha; es decir, hay un tenebrismo que en este caso resulta casi
+            caravaggiano, aunque sin las actitudes dramáticas del estilo, y se mantiene la típica y cristalina
+            tranquilidad que caracteriza a la mayor parte de las obras de Vermeer de Delft.
+          </p>
+          <p>
+            <b>Precio</b>: 1.998,59 USD
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Detalle 5-->
+    <div class="album py-5 bg-light">
+      <div class="col-lg-5 mx-auto p-3 py-md-3">
+
+        <h1 class="display-3">Detalle obra</h1>
+        <br>
+        <!--Volver a inicio-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Descripcion</li>
+          </ol>
+        </nav>
+        <br>
+        <!--Contenido de detalle 5-->
+        <div class="clearfix">
+          <img src="img/exp5.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="">
+
+          <p>
+            <b>Autor:</b> Vincent van Gogh
+          </p>
+
+          <p>
+            <b>Nombre</b>: La noche estrellada
+          </p>
+
+          <p>
+            <b>Técnica</b>: Óleo / Pintura al aceite
+          </p>
+          <p>
+            <b>Descripción</b>: Destaca el tratamiento de la luz de las estrellas como puntas de luz envueltas en un
+            halo luminoso a su alrededor, obtenido con una de las pinceladas más personales de la historia de la
+            pintura: un trazo a base de espirales que dominan el cielo y los cipreses de primer plano, tomando como
+            inspiración a Seurat y la estampa japonesa. Al fondo se aprecia la silueta de un pueblo con la larga aguja
+            de la torre de la iglesia presidiendo el conjunto.
+          </p>
+          <p>
+            <b>Historia</b>: Van Gogh pintó La noche estrellada sobre el Ródano en 1888—solo un año antes de que
+            completara La noche estrellada. Durante esta época, el artista vivía en Arlés, una idílica comuna francesa.
+            Aunque fue pintada con pinceladas vibrantes y colores expresivos, la escena es tranquila; “dos coloridos
+            amantes en primer plano” son las únicas personas presentes en la pintura, y el cielo lleno de estrellas
+            evoca un sentimiento de serenidad.
+            Van Gogh pintó este paisaje en varias ocasiones. Sin embargo, La noche estrellada es el único estudio
+            nocturno de esta vista. Por lo tanto, además de las descripciones en las docenas de cartas que le escribió a
+            su hermano, Theo, el cuadro ofrece una rara visión nocturna de lo que el artista vio mientras estaba en
+            aislamiento. “A través de la ventana con barrotes de hierro, puedo vislumbrar un cuadro de trigo cercado”,
+            escribió en mayo de 1889, “sobre el cual en la mañana veo salir el sol en toda su gloria”.
+          </p>
+          <p>
+            <b>Precio</b>: 2.319,00 USD
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Detalle 6-->
+    <div class="album py-5 bg-light">
+      <div class="col-lg-5 mx-auto p-3 py-md-3">
+
+        <h1 class="display-3">Detalle obra</h1>
+        <br>
+        <!--Volver a inicio-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Descripcion</li>
+          </ol>
+        </nav>
+        <br>
+        <!--Contenido de detalle 6-->
+        <div class="clearfix">
+          <img src="img/exp6.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="">
+
+          <p>
+            <b>Autor:</b> Edvard Munch
+          </p>
+
+          <p>
+            <b>Nombre</b>: El Grito
+          </p>
+
+          <p>
+            <b>Técnica</b>: Técnica mixta de óleo y pastel sobre cartón
+          </p>
+          <p>
+            <b>Descripción</b>:El grito es una obra del pintor noruego Edvard Munch, cuyo título original es Skrik
+            (Scream en inglés). Debido a su fuerza expresiva, esta pintura es considerada un antecedente del movimiento
+            expresionista. El grito es el cuadro más famoso de Munch, quien realizó diferentes versiones del mismo a lo
+            largo de los años.
+          </p>
+          <p>
+            <b>Historia</b>: El cuadro La desesperación (1892), previo a El grito, retrata precisamente ese momento. En
+            él, aparece en primer plano un hombre con sombrero de copa de medio lado, en actitud contemplativa, en un
+            escenario similar.
+            Sin embargo, Munch siguió experimentando, y pintó un nuevo cuadro, con el mismo título, en el que representa
+            a un hombre que muestra el rostro en una actitud más desesperada, en medio de una escena más sombría.
+
+            No satisfecho con los cuadros anteriores, Munch siguió pintando, en busca de la que sería su obra maestra.
+            Probó entonces con una figura andrógina, que está de frente y se lleva las manos a la cabeza con una
+            expresión de profunda angustia, que parece emitir (¿u oír?) un grito.
+          </p>
+          <p>
+            <b>Precio</b>: 1,917,00 USD
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!--Pie de pagina-->
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2021 Programación Web~002</p>
+  </footer>
+
+  <!--Scripts-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

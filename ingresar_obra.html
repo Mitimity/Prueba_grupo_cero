@@ -14,7 +14,10 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Grupo cero</a>
+        <!-- logo -->
+        <img class="navbar-brand" src="img/t25444.png" width="auto" height="50" alt="">
+
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,7 +51,7 @@
                   fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                   <path
                     d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                </svg>&nbsp;Contactenos</a>
+                </svg>&nbsp;Contáctenos</a>
             
             <!--Mi cuenta-->
             <li class="nav-item dropdown">
@@ -59,7 +62,7 @@
                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                 </svg>&nbsp;Mi cuenta</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="inicio_sesion.html">Iniciar sesion</a></li>
+                <li><a class="dropdown-item" href="inicio_sesion.html">Iniciar sesión</a></li>
                 <li><a class="dropdown-item" href="crear_usuario.html">Crear cuenta</a></li>
               </ul>
             </li>
@@ -100,7 +103,7 @@
         <form action="index.html" method="post" onsubmit="">
 
           <!--Subir imagen-->
-          <label for="fileObra" class="form-label">Imagen de la obra</label>
+          <label for="fileObra" class="form-label">Imágen de la obra</label>
           <div class="input-group mb-3">
             <input type="file" class="form-control" id="fileObra">
           </div>
@@ -120,7 +123,7 @@
           </div>
 
           <!--Ingresar tecnica usada-->
-          <label for="form-control" class="form-label">Tecnica utilisada</label>
+          <label for="form-control" class="form-label">Técnica utilizada</label>
           <select class="form-select">
             <option selected>...</option>
             <option value="1">Acuarela</option>
@@ -129,7 +132,7 @@
           </select>
 
           <!--Descripcion de la obra-->
-          <label for="txtDescripcion" class="form-label">Descripcion de la obra</label>
+          <label for="txtDescripcion" class="form-label">Descripción de la obra</label>
           <div class="input-group input-group-sm mb-3">
             <textarea class="form-control" id="txtDescripcion" rows="3"></textarea>
           </div>
@@ -140,8 +143,21 @@
             <textarea class="form-control" id="txtHistoria" rows="3"></textarea>
           </div>
 
+          <!--Valor de la obra-->
+          <label for="txtValor" class="form-label">Valor de la obra</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <select class="btn btn-outline-secondary">
+              <option selected>Moneda</option>
+              <option value="1">USD</option>
+              <option value="2">CLP</option>
+            </select>
+            <input type="number" class="form-control" id="txtValor" placeholder="Valor de la obra" required minlength="3">
+          </div>
+
           <!--Boton enviar-->
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <br><br>
+          <div class="d-grid gap-2 col-6 mx-auto"><button type="submit" class="btn btn-primary">Enviar</button></div>          
         </form>
 
       </div>
@@ -150,7 +166,7 @@
 
   <!--Pie de pagina-->
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2021 Programacion Web~002</p>
+    <p class="mb-1">&copy; 2021 Programación Web~002</p>
   </footer>
 
   <!--Scripts-->

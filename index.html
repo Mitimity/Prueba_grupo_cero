@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Principal</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="dist/css/lightbox.min.css" rel="stylesheet"/>
+  <link href="dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 
 <!--Tamaño imagen-->
@@ -32,7 +32,10 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Grupo cero</a>
+        <!-- logo -->
+        <img class="navbar-brand" src="img/t25444.png" width="auto" height="50" alt="">
+
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -66,7 +69,7 @@
                   fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                   <path
                     d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                </svg>&nbsp;Contactenos</a>
+                </svg>&nbsp;Contáctenos</a>
 
               <!--Mi cuenta-->
             <li class="nav-item dropdown">
@@ -78,7 +81,7 @@
                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                 </svg>&nbsp;Mi cuenta</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="inicio_sesion.html">Iniciar sesion</a></li>
+                <li><a class="dropdown-item" href="inicio_sesion.html">Iniciar sesión</a></li>
                 <li><a class="dropdown-item" href="crear_usuario.html">Crear cuenta</a></li>
               </ul>
             </li>
@@ -146,9 +149,10 @@
       </button>
     </div>
 
-    <!--Menu de filtros--><!--navbar-light bg-light px-3-->
+    <!--Menu de filtros-->
+    <!--navbar-light bg-light px-3-->
     <nav id="navbar-example2" class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Busqueda personalizada</a>
+      <a class="navbar-brand" href="#">Búsqueda personalizada</a>
 
       <ul class="nav nav-pills">
         <li class="nav-item">
@@ -178,7 +182,7 @@
               fill="currentColor"></path>
             </svg>
             <!--Detalle titulo-->
-            <span class="fs-4" id="obras">&nbsp;Galeria</span>
+            <span class="fs-4" id="obras">&nbsp;Galería</span>
           </div>
 
           <!--Contenedor de imagenes-->
@@ -186,136 +190,155 @@
             <!--Imagen 1-->
             <div class="col">
               <div class="card shadow-sm">
-                <img src="img/exp1.jpg" width="100%" height="225" alt="">
-                <title>Placeholder</title>
+                <!--Imagen-->
+                <a href="img/exp1.jpg"data-lightbox="obras" data-title="Obras"><img src="img/exp1.jpg" width="100%" height="225" alt=""></a>
+                <!--Titulo-->
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
-                </svg>
+                  dy=".3em">La Mona Lisa</text>
+                  <!--Contenido-->
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit labore
-                    consequuntur veritatis commodi</p>
+                  <p class="card-text">
+                    <p>Autor: Leonardo da Vinci</p>
+                    <p>Técnica</b>: Óleo / Técnica del sfumato</p>
+                  </p>
+                  <!--Botones-->
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/exp1.jpg" data-lightbox="obras" data-title="My caption">Ver imagen</a></button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
-                    </div>
-                    <small class="text-muted">Artista</small>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                          href="consultarimg.html">Ver detalles</a></button>
+                    <!--Valor de obra-->
+                    <small class="text-muted">$2.393,00 USD</small>
                   </div>
+
                 </div>
               </div>
             </div>
+
             <!--Imagen 2-->
             <div class="col">
               <div class="card shadow-sm">
-                <!--Direccion-->
-                <img src="img/exp2.jpg" width="100%" height="225" alt="">
-                <title>Placeholder</title>
+                <!--Imagen-->
+                <a href="img/exp2.jpg"data-lightbox="obras" data-title="Obras"><img src="img/exp2.jpg" width="100%" height="225" alt=""></a>
+                <!--Titulo-->
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
-                </svg>
-
+                  dy=".3em">Baile en el Moulin de la Galette</text>
+                  <!--Contenido-->
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit labore
-                    consequuntur veritatis commodi</p>
+                  <p class="card-text">
+                    <p>Autor: Pierre-Auguste Renoir</p>
+                    <p>Técnica</b>: Óleo / Aceite</p>
+                  </p>
+                  <!--Botones-->
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/exp2.jpg" data-lightbox="obras" data-title="My caption">Ver imagen</a></button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
-                    </div>
-                    <small class="text-muted">Artista</small>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                          href="consultarimg.html">Ver detalles</a></button>
+                    <!--Valor de obra-->
+                    <small class="text-muted">$2.151,00 USD</small>
                   </div>
+
                 </div>
               </div>
             </div>
+
             <!--Imagen 3-->
             <div class="col">
               <div class="card shadow-sm">
-                <!--Direccion-->
-                <img src="img/exp3.jpg" width="100%" height="225" alt="">
-                <title>Placeholder</title>
+                <!--Imagen-->
+                <a href="img/exp3.jpg"data-lightbox="obras" data-title="Obras"><img src="img/exp3.jpg" width="100%" height="225" alt=""></a>
+                <!--Titulo-->
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
-                </svg>
-
+                  dy=".3em">Impresión, sol naciente</text>
+                  <!--Contenido-->
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit labore
-                    consequuntur veritatis commodi</p>
+                  <p class="card-text">
+                    <p>Autor: Claude Monet</p>
+                    <p>Técnica</b>: Óleo</p>
+                  </p>
+                  <!--Botones-->
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/exp1.jpg" data-lightbox="obras" data-title="My caption">Ver imagen</a></button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
-                    </div>
-                    <small class="text-muted">Artista</small>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                          href="consultarimg.html">Ver detalles</a></button>
+                    <!--Valor de obra-->
+                    <small class="text-muted">$2.016,00 USD</small>
                   </div>
+
                 </div>
               </div>
             </div>
+
             <!--Imagen 4-->
             <div class="col">
               <div class="card shadow-sm">
-                <!--Direccion-->
-                <img src="img/exp4.jpg" width="100%" height="225" alt="">
-                <title>Placeholder</title>
+                <!--Imagen-->
+                <a href="img/exp4.jpg"data-lightbox="obras" data-title="Obras"><img src="img/exp4.jpg" width="100%" height="225" alt=""></a>
+                <!--Titulo-->
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
-                </svg>
-
+                  dy=".3em">La joven de la perla</text>
+                  <!--Contenido-->
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit labore
-                    consequuntur veritatis commodi</p>
+                  <p class="card-text">
+                    <p>Autor: Johannes Vermeer</p>
+                    <p>Técnica</b>: Pintura al aceite</p>
+                  </p>
+                  <!--Botones-->
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/exp4.jpg" data-lightbox="obras" data-title="My caption">Ver imagen</a></button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
-                    </div>
-                    <small class="text-muted">Artista</small>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                          href="consultarimg.html">Ver detalles</a></button>
+                    <!--Valor de obra-->
+                    <small class="text-muted">$1.998,59 USD</small>
                   </div>
+
                 </div>
               </div>
             </div>
+
             <!--Imagen 5-->
             <div class="col">
               <div class="card shadow-sm">
-                <!--Direccion-->
-                <img src="img/exp5.jpg" width="100%" height="225" alt="">
-                <title>Placeholder</title>
+                <!--Imagen-->
+                <a href="img/exp5.jpg"data-lightbox="obras" data-title="Obras"><img src="img/exp5.jpg" width="100%" height="225" alt=""></a>
+                <!--Titulo-->
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
-                </svg>
-
+                  dy=".3em">La noche estrellada</text>
+                  <!--Contenido-->
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit labore
-                    consequuntur veritatis commodi</p>
+                  <p class="card-text">
+                    <p>Autor: Vincent van Gogh</p>
+                    <p>Técnica</b>: Óleo / Pintura al aceite</p>
+                  </p>
+                  <!--Botones-->
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/exp5.jpg" data-lightbox="obras" data-title="My caption">Ver imagen</a></button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
-                    </div>
-                    <small class="text-muted">Artista</small>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                          href="consultarimg.html">Ver detalles</a></button>
+                    <!--Valor de obra-->
+                    <small class="text-muted">$2.319,00 USD</small>
                   </div>
+
                 </div>
               </div>
             </div>
+
             <!--Imagen 6-->
             <div class="col">
               <div class="card shadow-sm">
-                <!--Direccion-->
-                <img src="img/exp6.jpg" width="100%" height="225" alt="">
-                <title>Placeholder</title>
+                <!--Imagen-->
+                <a href="img/exp6.jpg"data-lightbox="obras" data-title="Obras"><img src="img/exp6.jpg" width="100%" height="225" alt=""></a>
+                <!--Titulo-->
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
-                </svg>
-
+                  dy=".3em">El Grito</text>
+                  <!--Contenido-->
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit labore
-                    consequuntur veritatis commodi</p>
+                  <p class="card-text">
+                    <p>Autor: Edvard Munch</p>
+                    <p>Técnica</b>: Técnica mixta de óleo y pastel sobre cartón</p>
+                  </p>
+                  <!--Botones-->
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/exp6.jpg" data-lightbox="obras" data-title="My caption">Ver imagen</a></button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
-                    </div>
-                    <small class="text-muted">Artista</small>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                          href="consultarimg.html">Ver detalles</a></button>
+                    <!--Valor de obra-->
+                    <small class="text-muted">$1,917,00 USD</small>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -346,7 +369,7 @@
                 <img src="img/art1.jpg" width="100%" height="225" alt="">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
+                  dy=".3em">Leonardo da Vinci </text>
                 </svg>
 
                 <div class="card-body">
@@ -354,7 +377,8 @@
                     consequuntur veritatis commodi</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art1.jpg" data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art1.jpg"
+                          data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
                     </div>
                     <small class="text-muted">Artista</small>
@@ -368,8 +392,8 @@
                 <!--Direccion-->
                 <img src="img/art2.jpg" width="100%" height="225" alt="">
                 <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Edvard
+                  Munch</text>
                 </svg>
 
                 <div class="card-body">
@@ -377,7 +401,8 @@
                     consequuntur veritatis commodi</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art2.jpg" data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art2.jpg"
+                          data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
                     </div>
                     <small class="text-muted">Artista</small>
@@ -392,7 +417,7 @@
                 <img src="img/art3.jpg" width="100%" height="225" alt="">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
+                  dy=".3em">Johannes Vermeer</text>
                 </svg>
 
                 <div class="card-body">
@@ -400,7 +425,8 @@
                     consequuntur veritatis commodi</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art3.jpg" data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art3.jpg"
+                          data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
                     </div>
                     <small class="text-muted">Artista</small>
@@ -414,8 +440,8 @@
                 <!--Direccion-->
                 <img src="img/art4.jpg" width="100%" height="225" alt="">
                 <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  Vincent Van Gogh</text>
                 </svg>
 
                 <div class="card-body">
@@ -423,7 +449,8 @@
                     consequuntur veritatis commodi</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art4.jpg" data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art4.jpg"
+                          data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
                     </div>
                     <small class="text-muted">Artista</small>
@@ -437,8 +464,8 @@
                 <!--Direccion-->
                 <img src="img/art5.jpg" width="100%" height="225" alt="">
                 <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Claude
+                  Monet</text>
                 </svg>
 
                 <div class="card-body">
@@ -446,7 +473,8 @@
                     consequuntur veritatis commodi</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art5.jpg" data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art5.jpg"
+                          data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
                     </div>
                     <small class="text-muted">Artista</small>
@@ -461,7 +489,7 @@
                 <img src="img/art6.jpg" width="100%" height="225" alt="">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Imagen</text>
+                  dy=".3em">Pierre-Auguste Renoir</text>
                 </svg>
 
                 <div class="card-body">
@@ -469,7 +497,8 @@
                     consequuntur veritatis commodi</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art6.jpg" data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="img/art6.jpg"
+                          data-lightbox="artistas" data-title="My caption">Ver imagen</a></button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Consultar</button>
                     </div>
                     <small class="text-muted">Artista</small>
@@ -485,7 +514,7 @@
 
   <!--Pie de pagina-->
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2021 Programacion Web~002</p>
+    <p class="mb-1">&copy; 2021 Programación Web~002</p>
   </footer>
 
   <!--Scripts-->
