@@ -98,7 +98,7 @@
         </div>
 
         <!--Formulario de contacto-->
-        <form action="index.html" method="post" onsubmit="">
+        <form action="" method="post" onsubmit="return validarFormContacto()">
 
           <!--Ingreso de correo electronico-->
           <div class="mb-3">
@@ -109,8 +109,8 @@
 
           <!--Ingreso de consulta-->
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required minlength="6"></textarea>
+            <label for="txtComentario" class="form-label">Consulta</label>
+            <textarea type="text" class="form-control" id="txtComentario" rows="3" required minlength="6" placeholder="Ingrese consulta o comentario."></textarea>
           </div>
 
           <!--Boton enviar-->

@@ -111,7 +111,7 @@
           <!--Ingresar contraseña-->
           <div class="mb-3">
             <label for="txtClave" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="txtClave" required minlength="5" maxlength="10" placeholder="Contraseña">
+            <input type="password" class="form-control" id="txtClaveInicio" required minlength="5" maxlength="10" placeholder="Contraseña" pattern="[a-zA-Z0-9]{5,10}" title="No se permiten espacios, solo letras y/o numeros">
             <div id="emailHelp" class="form-text">¿No tienes cuenta? puedes registrarte <a
                 href="crear_usuario.html">aquí.</a></div>
           </div>

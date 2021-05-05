@@ -100,7 +100,7 @@
         </div>
 
         <!--Formulario de ingreso obra-->
-        <form action="index.html" method="post" onsubmit="">
+        <form action="" method="post" onsubmit="return validarFormObra()">
 
           <!--Subir imagen-->
           <label for="fileObra" class="form-label">Imágen de la obra</label>
@@ -111,21 +111,21 @@
           <!--Ingresar autor-->
           <label for="form-control" class="form-label">Nombre autor</label>
           <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="txtNombreAutor">Autor</span>
-            <input type="text" class="form-control" id="txtNombreAutor" required minlength="5">
+            <span class="input-group-text">Autor</span>
+            <input type="text" class="form-control" id="txtNombreAutor" required minlength="5" pattern="[A-Za-z ]{5,60}" title="Ingrese solo letras entre 5 a 60 caracteres" placeholder="Nombre y apellido de autor">
           </div>
 
           <!--Ingresar nombre obra-->
           <label for="txtNombreObra" class="form-label">Nombre obra</label>
           <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="txtNombreObra">Obra</span>
-            <input type="text" class="form-control" id="txtNombreObra" required minlength="2">
+            <span class="input-group-text">Obra</span>
+            <input type="text" class="form-control" id="txtNombreObra" required minlength="2" pattern="[A-Za-z ]{2,60}" title="Ingrese solo letras entre 2 a 60 caracteres" placeholder="Nombre de la obra">
           </div>
 
           <!--Ingresar tecnica usada-->
           <label for="form-control" class="form-label">Técnica utilizada</label>
           <select class="form-select">
-            <option selected>...</option>
+            <option selected>Tecnica</option>
             <option value="1">Acuarela</option>
             <option value="2">Oleo</option>
             <option value="3">Otro</option>
@@ -134,13 +134,13 @@
           <!--Descripcion de la obra-->
           <label for="txtDescripcion" class="form-label">Descripción de la obra</label>
           <div class="input-group input-group-sm mb-3">
-            <textarea class="form-control" id="txtDescripcion" rows="3"></textarea>
+            <textarea class="form-control" id="txtDescripcion" rows="3" pattern="[A-Za-z0-9 ]{2,500}" title="Ingrese solo letras entre 2 a 500 caracteres" placeholder="Ingrese descripcion"></textarea>
           </div>
 
           <!--Historia de la obra-->
           <div class="mb-3">
             <label for="txtHistoria" class="form-label">Historia de la obra</label>
-            <textarea class="form-control" id="txtHistoria" rows="3"></textarea>
+            <textarea class="form-control" id="txtHistoria" rows="3" pattern="[A-Za-z0-9 ]{2,500}" title="Ingrese solo letras entre 2 a 500 caracteres" placeholder="Ingrese Historia"></textarea>
           </div>
 
           <!--Valor de la obra-->
@@ -152,7 +152,7 @@
               <option value="1">USD</option>
               <option value="2">CLP</option>
             </select>
-            <input type="number" class="form-control" id="txtValor" placeholder="Valor de la obra" required minlength="3">
+            <input type="text" class="form-control" id="txtValor" placeholder="Valor de la obra" required minlength="2" pattern="[0-9]{2,20}" title="Solo se permite numeros entre 2 a 20 cifras">
           </div>
 
           <!--Boton enviar-->
