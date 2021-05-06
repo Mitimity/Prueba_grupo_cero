@@ -40,11 +40,13 @@ function validarNombre() {
 /*Validar formulario contacto*/
 function validarFormContacto() {
     var comentario = document.getElementById('txtComentario').value;
+
     if (comentario.trim().length==0) {
         alert('El campo de consulta no puede estar vacio.');
         return false;
     }
     return true;
+    
 }
 
 /*****************************************/
